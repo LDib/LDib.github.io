@@ -1,0 +1,9 @@
+
+
+body {
+    background-image: url(/assets/background.png);
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-attachment: fixed;
+
+  }
