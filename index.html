@@ -1,58 +1,87 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Laurence Dibah Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-    <div id="name">
-        <h1>LAURENCE DIBAH</h1>
-    </div>
-    <nav>
-        <h3>ABOUT</h3>
-        <h3>CODE</h3>
-        <h3>CONTACT</h3>
 
-        <img src="/assets/codepen.svg" alt="Codepen">
-        <img src="/assets/github.svg" alt="Github">
-        <img src="/assets/linkedin.svg" alt="Linkedin">
-    </nav>
+<head>
+    <meta charset="utf-8">
+    <title>Laurence Dibah Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <div id="about">
-        <h1>ABOUT</h1>
-        <p>
-            My name is Laurence and I am a full stack developer from Melbourne.
+<body>
 
-            Before getting into programming I worked in continuous improvement in the finance sector, a strong desire for challenge, growth and exploring my creative side propelled me down my current career path.
+    <header>
+        <h1 class="title">LAURENCE DIBAH</h1>
 
-            I am passionate about being programmer because I enjoy creating well structured, functional programs with a strong focus on user experience
+        <div class="navigation">
+            <nav>
+                <a href="#about">ABOUT</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
 
-            I am skilled in a number of programming languages such Ruby, Rails, HTML, CSS, Javascipt, React, Node & MongoDB.
-        </p>
-    </div>
+            <ul>
+                <li><img src="/assets/codepen.svg" alt="Codepen"></li>
+                <li><img src="/assets/github.svg" alt="Github"></li>
+                <li><img src="/assets/linkedin.svg" alt="Linkedin"></li>
+            </ul>
+        </div>
+    </header>
 
-    <div id="code">
-        <h1>CODE</h1>
-        <img src="/assets/html5.svg" alt="HTML5">
-        <img src="/assets/css3.svg" alt="CSS3">
-        <img src="/assets/javascript.svg" alt="Javascript">
-        <img src="/assets/ruby.svg" alt="Ruby">
-        <img src="/assets/rails.svg" alt="Ruby on Rails">
-        <img src="/assets/react.svg" alt="React">
-        <img src="/assets/node.svg" alt="Node">
-        <img src="/assets/mongodb.svg" alt="MongoDB">
-    </div>
+    <section id="about">
+        <article>
+            <h2 class="title">ABOUT</h2>
+            <p>My name is Laurence and I am a full stack developer from Melbourne.</p>
+            <p>Before getting into programming I worked in continuous improvement in the finance sector, a strong
+                desire for challenge, growth and exploring my creative side propelled me down my current career path.</p>
+            <p>I am passionate about being programmer because I enjoy creating well structured, functional programs
+                with a strong focus on user experience
+            </p>
+            <p>
+                I am skilled in a number of programming languages such Ruby, Rails, HTML, CSS, Javascipt, React, Node &
+                MongoDB.
+            </p>
+        </article>
+    </section>
 
-    <div id="contact">
-        <h1>CONTACT</h1>
-        <input id="name" class="" name="name" type="text" placeholder="Name" required />
-        <input id="email" class="" name="email" type="text" placeholder="E-mail" required />
-        <input id="message" class="" name="message" type="text" placeholder="Message" required />
+    <section id="skills">
+        <article>
+                <h2 class="title">SKILLS</h2>
+                <div class="skills">
+                        <img src="/assets/html5.svg" alt="HTML5">
+                        <img src="/assets/css3.svg" alt="CSS3">
+                        <img src="/assets/javascript.svg" alt="Javascript">
+                        <img src="/assets/ruby.svg" alt="Ruby">
+                        <img src="/assets/rails.svg" alt="Ruby on Rails">
+                        <img src="/assets/react.svg" alt="React">
+                        <img src="/assets/node.svg" alt="Node">
+                        <img src="/assets/mongodb.svg" alt="MongoDB">
+                </div>
+        </article>
+    </section>
 
-        <button type="button">SUBMIT</button>
-    </div>
+    <section id="contact">
+        <h2 class="title">CONTACT</h2>
+        <form action="/" class="contact-form">
+            
+            <fieldset border: 0>
+                    <label for="name">Name: </label>
+                    <input name="name" type="text" placeholder="John Smith" required />
+            </fieldset>
+            <fieldset>
+                    <label for="email">Email: </label>
+                    <input id="email" class="" name="email" type="text" placeholder="e.g. john@smith.com" required />
+            </fieldset>
+            <fieldset>
+                    <label for="message">Your message: </label>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+            </fieldset>
 
-    </body>
+            <fieldset>
+                    <input type="submit" value="Send Message">
+            </fieldset>
+        </form>
+    </section>
+
+</body>
+
 </html>
-

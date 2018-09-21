@@ -1,9 +1,143 @@
 
+@font-face {
+    font-family: Codystar-Light;
+    src: url(/assets/Codystar-Light.ttf);
+}
+
+@font-face {
+    font-family: Bungee-Shade;
+    src: url(/assets/Bungee-Shade.otf)
+}
+
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url(/assets/Comfortaa-Bold.ttf)
+}
+
+@font-face {
+    font-family: SourceSansPro-Semibold;
+    src: url(/assets/SourceSansPro-Semibold.otf)
+}
+
+* {
+    font-family: SourceSansPro-Semibold, sans-serif;
+    font-size: 16px;
+    color: #D38A20;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
 
 body {
+    background: #232323;
     background-image: url(/assets/background.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: relative;
     background-attachment: fixed;
+}
 
+.title {
+    color: #E5E5E5;
+    text-align: center;
+    font-family: Codystar-Light, sans-serif;
+}
+
+h1.title {
+    font-size: 5em;
+}
+
+
+h2.title {
+    font-size: 3em;
+    font-family: Bungee-Shade;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    font-size: 6em;
+}
+
+.navigation nav a{
+    display: block;
+    font-size: 3em;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.navigation nav a:hover{
+    color: #E5E5E5;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin-top: -1em;
+}
+
+.navigation ul li {
+    margin: 1em;
+}
+
+section#about p{
+    max-width: 30em;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    max-width: 50em;
+    flex-flow: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.skills img {
+    margin: 2em;
+}
+
+section#contact fieldset{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    border: none; 
+    /* font-family:Arial; */
   }
+
+  /* legend{
+    display:none;
+  } */
+  /* h2{
+    border-bottom:2px solid gray;
+    margin:1em 0;
+  } */
+  /* p{
+    margin:1em 0;
+  } */
+
+/* 
+
+h1 {
+    color: #DACCBA;
+    font-family: Bungee-Shade;
+} */
+
+/* h3 {
+    color: #D38A20;
+    font-family: Comfortaa-Bold;
+}
+
+p {
+    color: #D38A20;
+    font-family: SourceSansPro-Semibold;
+}
+ */
